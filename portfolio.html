@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="og:title" content="Personal Portfolio Website">
+    <meta name="og:descrption" content="Its a website of his/her information in detail">
+    <meta name="og:author" content="Ramesh">
+    <meta name="og:image" content="./imgages/itemp-pic.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(221, 238, 243);
+    }
+
+    h1,h2,nav{
+        background-color: khaki;
+        color: rgb(0, 0, 0);
+    }
+
+    nav a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .button{
+        background-color: rgb(253, 109, 20);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        width: 100px;
+        height:30px
+    }
+    #edu-details ,.picture-id,.location{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #edu-details{
+        margin-top: 0;
+    }
+    .fieldset{
+        margin:20px 0;
+
+    }
+</style>
+<body>
+    <center>
+        <h1>PORTFOLIO</h1>
+        <nav>
+        <a href="#home">HOME</a> |
+        <a href="#about">ABOUT ME</a> |
+        <a href="#edu-details">EDUCATIONAL DETAILS</a> |
+        <a href="#contact-info">CONTACT INFO</a>
+        </nav><hr>
+    </center>
+    <img src="imgages/welcome.jpg" alt="welcome_img" width="100%" height="320" id="home">
+    <hr>
+    <h2 id="about">ABOUT ME</h2>
+    <dl>
+        <dt  class="picture-id">
+            <center><dd><img src="imgages/itemp-pic.jpg" alt="employee-pic" width="450px" style="border-radius: 50%;"></dd>
+            <dd>An enthusiastic Electrical Engineering graduate with a strong interest in technology and software development. Skilled in front-end web technologies including HTML, CSS, and JavaScript, with a solid understanding of Python programming. Passionate about creating intuitive and responsive web interfaces, and keen to bridge engineering knowledge with software solutions. Quick learner with a problem-solving mindset, eager to contribute to dynamic teams and grow in the field of web development and software engineering.</dd></center>
+        </dt>
+    </dl>
+    <hr>
+    <h2 id="edu-details">EDUCATIONAL DETAILS</h2>
+    <table width="100%" border="1" cellpadding="10" cellspacing="0" id="edu-details">
+        <tbody>
+        <tr align="center">
+            <th>S.no</th>
+            <th>College Name/Universiy Name</th>
+            <th>Qualification</th>
+            <th>Percentage</th>
+        </tr>
+        <tr align="center">
+            <td>1.</td>
+            <td>RGM COLLEGE OF ENGINEERING AND TECHNOLOGY</td>
+            <td>B-TECH/EEE</td>
+            <td>83</td>
+        </tr>
+        <tr align="center">
+            <td>2.</td>
+            <td>ESC GOVT POLYTECHNIC COLLEGE</td>
+            <td>DIPLOMA/EEE</td>
+            <td>87</td>
+        </tr>
+        <tr align="center">
+            <td>3.</td>
+            <td>SRI KASTURI ENGLISH HIGH SCHOOL</td>
+            <td>SSC</td>
+            <td>93</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2 id="contact-info">CONTACT INFO</h2>
+    <form action="forms/submission_form.html">
+        <fieldset style="border: none;" class="fieldset">
+            <center>
+            <table id="edu-details">
+                <tbody>
+                    <tr>
+                        <th><label for="name">First Name:</label></th>
+                        <td><input type="text" name="Fname" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="name">Last Name:</label></th>
+                        <td><input type="text" name="Lname" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="contact">Mobile Number:</label></th>
+                        <td><input type="text" maxlength="10" name="mobile-no" id="contact" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">E-mail:</label></th>
+                        <td><input type="email" name="e-mail" id="email" pattern="[a-z\d._]+ @(gmail | yahoo | outlook)\.(in | co |org |gov | edu)" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="descrption">Desscription</label></th>
+                        <td><textarea name="client-msg" id="descrption" placeholder="type here...."></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" class="button">
+            </center>
+        </fieldset>
+    </form>
+    <hr>
+    <center  class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d268.0421270199002!2d78.40032742954664!3d17.49053199330292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91cf2c630015%3A0xb84227bd0d21d4ef!2s10000Coders%20%7C%20Fullstack%20with%20AI!5e0!3m2!1sen!2sin!4v1752473737363!5m2!1sen!2sin" frameborder="1" name="iframe" height="250px" width="300px"></iframe>
+    </center>
+</body>
+</html>
